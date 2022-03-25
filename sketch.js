@@ -54,16 +54,16 @@ function draw() {
       var board1Collision = Matter.SAT.collides(
         board1.body,
         playerArrows[i].body
+        score=score+10
       );
 
       var board2Collision = Matter.SAT.collides(
         board2.body,
         playerArrows[i].body
+        score=score+10
       );
 
-      /*if (board1Collision || board2Collision) {
-        score += 5;
-      }*/
+     
 
       //if (board1Collision.collided && board2Collision.collided) {
         //score += 5;
